@@ -1,0 +1,95 @@
+/*The whole table div*/
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 623px;
+    left: 25px;
+    top: 21px;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    height: 74px;
+    border: 1px solid red;
+}
+
+/*Body*/
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 549px;
+    border: 1px solid blue;
+}
+
+/*Buttons*/
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 25px 30px;
+    background: #03A9F4;
+    width: 100%;
+    max-width: 185px;
+    height: 74px;
+    color: white;
+    cursor: pointer;
+}
+
+.inside-button {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.inside-exit-button {
+    left: 18.07%;
+    right: 18.07%;
+    top: 18.07%;
+    bottom: 18.07%;
+}
+
+.first-button {
+    display: flex;
+    justify-content: center;
+    padding: 25px 30px;
+    background: #E91E63;
+    border-radius: 8px 0px 0px 0px;
+    width: 100%;
+    max-width: 185px;
+    height: 74px;
+    color: white;
+    cursor: pointer;
+}
+
+.exit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    background: #03A9F4;
+    border-radius: 0px 8px 0px 0px;
+    width: 100%;
+    max-width: 60px;
+    height: 74px;
+    color: white;
+    cursor: pointer;
+}
+
+/*Icons*/
+.icon {
+    margin-right: 10px;
+}
+
+.exit-icon {
+    font-size: 20px;
+}
