@@ -1,2 +1,2 @@
 # Popup-Table-Design
-Popup Table Design with using HTML, CSS and JavaScript.
+Popup Table Design using HTML, CSS and JavaScript.
