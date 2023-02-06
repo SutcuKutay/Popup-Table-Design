@@ -8,33 +8,45 @@
     <meta name="title" content="Bestellingen-Popup">
     <meta name="title" content="Bestellingen Popup Page">
     <title>Bestellingen-Popup</title>
+    <script src="https://kit.fontawesome.com/4f94bf432c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/4f94bf432c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="box">
-        <div class="header">
-            <button id="first-button" class="first-button" type="button" onclick="button1()">
+
+        <!--Header-->
+        <div id="nav-tab" class="nav-tabs header" role="tablist">
+            <button id="first-button" class="active first-button" data-bs-toggle="tab" data-bs-target="#nav-bestelling"
+                type="button" role="tab" aria-controls="nav-bestelling" aria-selected="true" onclick="button1()">
                 <div class="inside-button">
                     <i class="fa-regular fa-file-lines icon"></i>
                     Bestelling
                 </div>
             </button>
-            <button id="second-button" class="button" type="button" onclick="button2()">
+            <button id="second-button" class="button" data-bs-toggle="tab" data-bs-target="#nav-klant" type="button"
+                role="tab" aria-controls="nav-klant" aria-selected="false" onclick="button2()">
                 <div class="inside-button">
                     <i class="fa-solid fa-person icon"></i>
                     Klant
                 </div>
             </button>
-            <button id="third-button" class="button" type="button" onclick="button3()">
+            <button id="third-button" class="button" data-bs-toggle="tab" data-bs-target="#nav-sms" type="button"
+                role="tab" aria-controls="nav-sms" aria-selected="false" onclick="button3()">
                 <div class="inside-button">
                     <i class="fa-regular fa-file-lines icon"></i>
                     SMS
                 </div>
             </button>
-            <button id="fourth-button" class="button" type="button" onclick="button4()">
+            <button id="fourth-button" class=" button" data-bs-toggle="tab" data-bs-target="#nav-details" type="button"
+                role="tab" aria-controls="nav-details" aria-selected="false" onclick="button4()">
                 <div class="inside-button">
                     <i class="fa-solid fa-info icon"></i>
                     Details
@@ -46,9 +58,178 @@
                 </div>
             </button>
         </div>
-        <div class="body">
-            <!--JavaScript will create this section-->
+        <!--#Header-->
+
+        <!--Body-->
+        <div id="nav-tabContent" class="tab-content tab-body">
+
+            <!--Bestelling-->
+            <div class="tab-pane fade show active" id="nav-bestelling" role="tabpanel" aria-labelledby="first-button">
+                <div class="body">
+                    <div id="bestelling-first-row">
+                        <div id="bestselling-first-row-div-1">
+                            <button id="bestselling-first-row-pen-icon">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <div id="bestselling-first-row-next-to-pen">
+                                <button id="bestselling-pen-button-head" class="bestselling-pen-buttons">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <button id="bestselling-pen-button-middle" class="bestselling-pen-buttons">
+                                    ZSM
+                                </button>
+                                <button id="bestselling-pen-button-tail" class="bestselling-pen-buttons">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="bestselling-first-row-div-2">
+                            <button class="bestselling-first-row-right-buttons">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button class="bestselling-first-row-right-buttons">
+                                <i class="fa-solid fa-computer"></i>
+                            </button>
+                            <button class="bestselling-first-row-right-buttons">
+                                <i class="fa-solid fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="bestelling-second-row">
+                        <div id="bestelling-second-row-left">
+                            <p id="bestelling-second-row-left-first-p">Wordt opgehaald door:</p>
+                            <p id="bestelling-second-row-left-second-p">T:</p>
+                        </div>
+                        <p id="bestelling-second-row-right">
+                            Datum: Vandaag 09:53
+                            Gewenste afhaaltijd: z.s.m
+                        </p>
+                    </div>
+                    <div id="bestelling-third-row">
+                        <div id="bestelling-third-row-left">
+                            <p id="bestelling-third-row-left-first-p">
+                                Product
+                            </p>
+                            <p id="bestelling-third-row-left-second-p">
+                                5 x Pizza Hawaï (Pizza)
+                                +1 Bakje chilisaus (Sauzen)
+                            </p>
+                        </div>
+                        <div id="bestelling-third-row-right">
+                            <p id="bestelling-third-row-right-first-p">
+                                Totaal
+                            </p>
+                            <p id="bestelling-third-row-right-second-p">
+                                €10,00
+                                €1,00
+                            </p>
+                        </div>
+                    </div>
+                    <div id="bestelling-fourth-row">
+                        <div id="bestelling-fourth-row-left">
+                            <p id="bestelling-fourth-row-left-first-p">
+                                Subtotaal:
+                            </p>
+                            <p id="bestelling-fourth-row-left-second-p">
+                                Korting:
+                            </p>
+                            <div id="bestelling-fourth-row-left-third-div">
+                                <p>
+                                    Totaal:
+                                </p>
+                                <p>Betaald via Contant</p>
+                            </div>
+                        </div>
+                        <div id="bestelling-fourth-row-right">
+                            <p id="bestelling-fourth-row-right-first-p">
+                                €11,00
+                            </p>
+                            <p id="bestelling-fourth-row-right-second-p">
+                                -€1,00
+                            </p>
+                            <div id="bestelling-fourth-row-right-third-div">
+                                <i class="fa-solid fa-flag"></i>
+                                <p>€10,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bestelling-final-button">
+                        <p>
+                            Bestelling weigeren
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--#Bestelling-->
+
+            <!--Klant-->
+            <div class="tab-pane fade" id="nav-klant" role="tabpanel" aria-labelledby="second-button">
+                <div class="body">
+                    <div id="klant-first-row">
+                        <card class="orange">
+                            <div>
+                                <i class="fa-solid fa-calendar-days" style="font-size: 50px;"></i>
+                            </div>
+                            <p>Klant sinds<br>20-08-2022 08:40</p>
+                        </card>
+                        <card class="blue">
+                            <div>
+                                <i class="fa-solid fa-bag-shopping" style="font-size: 50px;"></i>
+                            </div>
+                            <p>Aantal bestellingen<br>1</p>
+                        </card>
+                        <card class="green">
+                            <div>
+                                <i class="fa-solid fa-euro-sign" style="font-size: 50px;"></i>
+                            </div>
+                            <p>Bestellingen totaal<br>€10,00</p>
+                        </card>
+                    </div>
+                    <div id="klant-second-row">
+                        <hr>
+                        <div>
+                            <p><span><b>Datum:</b></span> Vandaag 11:42</p>
+                            <p><span><b>Gewenste afhaaltijd :</b></span> z.s.m</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="klant-third-row">
+                        <div id="klant-third-row-left">
+                            <p>Betalingsmethode: Contant</p>
+                            <p>Bestelling: Afhalen</p>
+                            <p>Platform: interface.POS</p>
+                        </div>
+                        <div id="klant-third-row-right">
+                            <p>Wordt opgehaald door:</p>
+                            <p>Klantnaam:</p>
+                            <p>Straat:</p>
+                            <p>Plaats/Postcode:</p>
+                            <p>Telefoonnummer:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#Klant-->
+
+            <!--SMS-->
+            <div class="tab-pane fade" id="nav-sms" role="tabpanel" aria-labelledby="third-button">
+                <div class="body">
+                    SMS
+                </div>
+            </div>
+            <!--#SMS-->
+
+            <!--Details-->
+            <div class="tab-pane fade" id="nav-details" role="tabpanel" aria-labelledby="fourth-button">
+                <div class="body">
+                    Details
+                </div>
+            </div>
+            <!--#Details-->
+
         </div>
+        <!--#Body-->
+
     </div>
 </body>
 
